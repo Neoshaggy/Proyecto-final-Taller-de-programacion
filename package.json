@@ -1,0 +1,15 @@
+{
+    "name": "PROYECTO_FINAL_TALLER_DE_PROGRAMACION_PARTE_1",
+    "version": "1.0.0",
+    "keywords": [
+        "util",
+        "functional",
+        "server",
+        "client",
+        "browser"
+    ],
+    "author": "Neoshaggy",
+    "contributors": [
+    ],
+    "dependencies": {}
+}

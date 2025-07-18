@@ -1,0 +1,141 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artistas</title>
+  <link rel="stylesheet" href="css/estilo1.css">
+  <link rel="stylesheet" href="css/estilo2.css">
+
+</head>
+
+<body>
+  <header>
+    <h1>Entretenimiento</h1>
+    <nav class="nav" id="nav">
+    <ul class="nav-list"> 
+  <a href="inicio.html">Inicio</a>
+  <a href="multimedia.html">Multimedia</a>
+  <a href="clientes.html">Clientes</a>
+  <a href="reclamos.html">Reclamos</a>
+  <a href="contacto.html">Contacto</a>
+  <a href="tabla.html">Horarios</a>
+  <a href="CONTENIDO.html">Galeria</a>
+  <a href="podcast.html">Podcast</a>
+  <a href="eventos.html">Eventos</a>
+  <a href="artistas.html">Artistas</a>
+  <a href="reservar.html">Reservar</a>
+  </ul>
+</nav>
+  </header>
+
+  <main>
+    <h2>🎨 Artistas Destacados</h2>
+ <table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Rol</th>
+      <th>Foto</th>
+      <th>Info</th> <!-- Columna para mostrar info -->
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Lucía Fernández</td>
+      <td>Conductora de Podcast</td>
+      <td>
+        <img src="Imagenes/lucia.png" alt="Lucía" width="100"
+        onclick="mostrarInfo(this, 'Lucía Fernández', 'Conductora de Podcast')">
+      </td>
+      <td>
+        <div class="info-box"></div>
+      </td>
+    </tr>
+    <tr>
+      <td>Pedro Pascal </td>
+      <td>Director de Cine</td>
+      <td>
+        <img src="Imagenes/pedro.png" alt="Pedro" width="100"
+        onclick="mostrarInfo(this, 'Pedro pascal', 'Director de Cine')">
+      </td>
+      <td>
+        <div class="info-box"></div>
+      </td>
+    </tr>
+    <tr>
+      <td>María Soto</td>
+      <td>Artista Visual</td>
+      <td>
+        <img src="Imagenes/maria.png" alt="María" width="100"
+        onclick="mostrarInfo(this, 'María Soto', 'Artista Visual')">
+      </td>
+      <td>
+        <div class="info-box"></div>
+      </td>
+    </tr>
+    <tr>
+  <td>Frida Kahlo</td>
+  <td>Pintora</td>
+  <td><img src="Imagenes/frida.png" alt="Frida Kahlo" width="100" onclick="mostrarInfo(this, 'Frida Kahlo', 'Pintora')"></td>
+  <td><div class="info-box"></div></td>
+</tr>
+<tr>
+  <td>Pablo Picasso</td>
+  <td>Pintor y Escultor</td>
+  <td><img src="Imagenes/picasso.png" alt="Pablo Picasso" width="100" onclick="mostrarInfo(this, 'Pablo Picasso', 'Pintor y Escultor')"></td>
+  <td><div class="info-box"></div></td>
+</tr>
+<tr>
+  <td>Shakira</td>
+  <td>Cantante y Compositora</td>
+  <td><img src="Imagenes/shakira.png" alt="Shakira" width="100" onclick="mostrarInfo(this, 'Shakira', 'Cantante y Compositora')"></td>
+  <td><div class="info-box"></div></td>
+</tr>
+<tr>
+  <td>Pedro Almodóvar</td>
+  <td>Director de Cine</td>
+  <td><img src="Imagenes/almodovar.png" alt="Pedro Almodóvar" width="100" onclick="mostrarInfo(this, 'Pedro Almodóvar', 'Director de Cine')"></td>
+  <td><div class="info-box"></div></td>
+</tr>
+<tr>
+  <td>Gabriel García Márquez</td>
+  <td>Escritor</td>
+  <td><img src="Imagenes/garciamarquez.png" alt="Gabriel García Márquez" width="100" onclick="mostrarInfo(this, 'Gabriel García Márquez', 'Escritor')"></td>
+  <td><div class="info-box"></div></td>
+</tr>
+<tr>
+  <td>Salma Hayek</td>
+  <td>Actriz y Productora</td>
+  <td><img src="Imagenes/salma.png" alt="Salma Hayek" width="100" onclick="mostrarInfo(this, 'Salma Hayek', 'Actriz y Productora')"></td>
+  <td><div class="info-box"></div></td>
+</tr>
+<tr>
+  <td>Gustavo Cerati</td>
+  <td>Músico y Cantautor</td>
+  <td><img src="Imagenes/cerati.png" alt="Gustavo Cerati" width="100" onclick="mostrarInfo(this, 'Gustavo Cerati', 'Músico y Cantautor')"></td>
+  <td><div class="info-box"></div></td>
+</tr>
+
+  </tbody>
+ <div id="info-artista">
+    <h3>Selecciona un artista</h3>
+    <p id="rol-artista"></p>
+  </div>
+    </table>
+  </main>
+
+    <footer>
+        <p>&copy; 2025 Entretenimiento Creativo. Todos los derechos reservados.</p>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/artista.js"></script>
+<div id="miModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="cerrarModal()">&times;</span>
+    <img id="modal-img" src="" alt="">
+    <h3 id="modal-nombre"></h3>
+    <p id="modal-rol"></p>
+  </div>
+</div>
+</body>
+</html>

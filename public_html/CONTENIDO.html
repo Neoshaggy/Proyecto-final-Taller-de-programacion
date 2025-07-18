@@ -1,0 +1,203 @@
+<html>
+    <head>
+        <title>CONTENIDO</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Libreria-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+              integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+              crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="css/estilocontenido.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="css/modal.css">
+        <link rel="stylesheet" href="css/lista.css">
+        <link rel="stylesheet" href="css/menu.css">
+    </head>
+    <body>
+        
+        <header>
+            <img class="logo" src="AQUI VA EL LOGO" >
+            <button id="abrir" class="abrir-menu"><i class="fa-solid fa-bars"></i></button>
+            <nav class="nav" id="nav">
+                <button class="cerrar-menu" id="cerrar"><i class="fa-solid fa-bars"></i></button>
+                <ul class="nav-list">
+                    <li>
+                        <li><a href="inicio.html">Inicio</a>
+                        <li><a href="multimedia.html">Multimedia</a></li>
+                        <li><a href="clientes.html">Clientes</a></li>
+                        <li><a href="reclamos.html">Reclamos</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="tabla.html">Horarios</a></li>
+                        <li><a href="galeria.html">Galeria</a></li>
+                        <li><a href="podcast.html">Podcast</a></li>
+                        <li><a href="eventos.html">Eventos</a></li>
+                        <li><a href="artistas.html">Artistas</a></li>
+                        <li><a href="reservar.html">Reservar</a></li>
+                        <a class="carrito"><i class="fa-solid fa-cart-shopping"></i>
+                            <table class="ul-carrito">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Nombre</th>
+                                        <th>Cantidad</th>
+                                        <th>Precio</th>
+                                        <th>Eliminar</th>
+                                    </tr>
+                                </thead>
+                                <tbody class="contenido-carrito">
+                                    
+                                </tbody>
+                            </table>
+                        </a>
+                       
+                </ul>
+            </nav>
+        </header>
+
+        <div class="galeria box-galeria">
+            <div class="info">
+                <h2 class="title">TIENDA DE CONTENIDO ONLINE</h2> 
+            </div>
+            <div class="lista"></div>
+            <div class="grid-galeria">
+                <div class="galeria gitem">
+                    <div class="foto">
+                        <img src="Imagenes/peli1.png" alt="">
+                    </div>
+                    <div class="pie">
+                        <p class="title-item">PELI 1</p>
+                        <p class="hidden">
+                            INFORMACIÓN DE LA PELICULA
+                        </p>
+                        <p class="hidden precio">25.00</p>
+                        <button class="open_modal" >Saber mas</button>   
+                    </div>
+                </div>
+                <div class="galeria gitem">
+                    <div class="foto">
+                        <img src="Imagenes/peli2.png" alt="">
+                    </div>
+                    <div class="pie">
+                        <p class="title-item">PELI 2</p>
+                        <p class="hidden">
+                            INFORMACIÓN DE LA PELICULA
+                        </p>
+                        <p class="hidden precio">15.00</p>
+                        <button class="open_modal">Saber mas</button>   
+                    </div>
+                </div>
+                <div class="galeria gitem">
+                    <div class="foto">
+                        <img src="Imagenes/peli3.png" alt="">
+                    </div>
+                    <div class="pie">
+                        <p  class="title-item">PELI 3</p>
+                        <p class="hidden">
+                            INFORMACIÓN DE LA PELICULA
+                        </p>
+                        <p class="hidden precio">29.99</p>
+                        <button class="open_modal">Saber mas</button>   
+                    </div>
+                </div>
+                <div class="galeria gitem">
+                    <div class="foto">
+                        <img src="Imagenes/peli4.jpeg" alt="">
+                    </div>
+                    <div class="pie">
+                        <p  class="title-item">PELI 4</p> 
+                        <p class="hidden">
+                            INFORMACIÓN DE LA PELICULA
+                        </p>
+                        <p class="hidden precio">49.99</p>
+                        <button class="open_modal">Saber mas</button>   
+                    </div>
+                </div>
+                <div class="galeria gitem">
+                    <div class="foto">
+                        <img src="Imagenes/peli5.png">
+                    </div>
+                    <div class="pie">
+                        <p class="title-item">PELI 5</p>
+                        <p class="hidden">
+                            INFORMACIÓN DE LA PELICULA
+                        </p>
+                        <p class="hidden precio">19.99</p>
+                        <button class="open_modal">Saber mas</button>   
+                    </div>
+                </div>
+                <div class="galeria gitem">
+                    <div class="foto">
+                        <img src="Imagenes/peli6.png" alt="">
+                    </div>
+                    <div class="pie">
+                        <p class="title-item">PELI 6</p>
+                        <p class="hidden">
+                            INFORMACIÓN DE LA PELICULA
+                        </p>
+                        <p class="hidden precio">39.99</p>
+                        <button class="open_modal">Saber mas</button>   
+                    </div>
+                </div>
+                <div class="galeria gitem">
+                    <div class="foto">
+                        <img src="Imagenes/peli7.png" alt="">
+                    </div>
+                    <div class="pie">
+                        <p class="title-item">PELI 7</p>
+                        <p class="hidden">
+                            INFORMACIÓN DE LA PELICULA
+                        </p>
+                        <p class="hidden precio">200.00</p>
+                        <button class="open_modal">Saber mas</button>   
+                    </div>
+                </div>
+                <div class="galeria gitem">
+                    <div class="foto">
+                        <img src="Imagenes/peli8.png" alt="">
+                    </div>
+                    <div class="pie">
+                        <p class="title-item">PELI 8</p>
+                        <p class="hidden">
+                            INFORMACIÓN DE LA PELICULA
+                            
+                        </p>
+                        <p class="hidden precio">34.00</p>
+                        <button class="open_modal">Saber mas</button>   
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+       
+
+        <div id="modal_container" class="modal-container">
+            <div class="modal">
+                <div class="photo-modal">
+                    <div class="ipm content-img">
+                        <img class="show-img" src="" alt="">
+                    </div>
+                    <div class="ipm">
+                        <div class="box-info-img">
+                            <h1 class="title">
+
+                            </h1>
+                            <p class="description">
+
+                            </p>
+                            <div class="datos-precio">Precio: 
+                                <p class="precio">
+                                </p>
+                            </div>
+                           
+                            <button id="agregar">Comprar</button>
+                            <button id="close">X</button>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/modal.js"></script>
+        <script src="js/lista.js"></script>
+        <script src="js/menu.js"></script>
+    </body>
+</html>

@@ -1,0 +1,13 @@
+{
+    "name": "PROYECTO_FINAL_TALLER_DE_PROGRAMACION_PARTE_1",
+    "version": "1.0.0",
+    "main": "path/to/main.css",
+    "ignore": [
+        ".jshintrc",
+        "**/*.txt"
+    ],
+    "dependencies": {
+    },
+    "devDependencies": {
+    }
+}

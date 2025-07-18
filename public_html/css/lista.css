@@ -1,0 +1,25 @@
+.ul-carrito{
+    background-color: rgb(48, 47, 47);
+    position: absolute;
+    z-index: 200;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    right: 0;
+}
+.ul-carrito li{
+    padding: 10px;
+}
+.carrito{
+    position: relative;
+    overflow: hidden;
+    display: block;
+    cursor: pointer;
+}
+.vercarrito{
+    overflow: visible;
+
+}
+th, td{
+    padding: 10px;
+}
