@@ -212,10 +212,25 @@ document.addEventListener('DOMContentLoaded', () => {
             border-style: dashed !important;
         }
         
+        .ticket-container h3,
+        .ticket-container p {
+            color: #000000 !important;
+        }
+        
+        .ticket-container .text-center h3 {
+            color: #000000 !important;
+            font-weight: bold !important;
+        }
+        
+        .ticket-container .text-center p {
+            color: #000000 !important;
+        }
+        
         .table-borderless td,
         .table-borderless th {
             border: none !important;
             padding: 0.25rem 0.5rem;
+            color: #000000 !important;
         }
         
         @media print {
@@ -223,6 +238,10 @@ document.addEventListener('DOMContentLoaded', () => {
             .modal-footer,
             .btn-close {
                 display: none !important;
+            }
+            
+            .ticket-container * {
+                color: #000000 !important;
             }
         }
     `;

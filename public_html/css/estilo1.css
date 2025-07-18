@@ -158,6 +158,30 @@ iframe {
     height: 100%;
     text-align: center;
     font-weight: bold;
+    color: #000000; /* Color negro para todos los elementos de la grilla */
+}
+
+/* Estilos específicos para los días de la semana */
+.campo-grid:nth-child(2), /* LUNES */
+.campo-grid:nth-child(3), /* MARTES */
+.campo-grid:nth-child(4), /* MIERCOLES */
+.campo-grid:nth-child(5), /* JUEVES */
+.campo-grid:nth-child(6), /* VIERNES */
+.campo-grid:nth-child(7), /* SABADO */
+.campo-grid:nth-child(8)  /* DOMINGO */
+{
+    color: #000000 !important;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 3px;
+}
+
+/* Color negro para las horas también */
+.campo-grid:nth-child(9n+1) { /* Cada 9 elementos (las horas) */
+    color: #000000 !important;
+    background-color: #e9ecef;
+    border: 1px solid #ced4da;
+    border-radius: 3px;
 }
 
 .content{
