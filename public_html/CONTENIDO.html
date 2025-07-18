@@ -7,6 +7,8 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
               integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
               crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
         <link href="css/estilocontenido.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="css/modal.css">
         <link rel="stylesheet" href="css/lista.css">
@@ -188,16 +190,113 @@
                                 </p>
                             </div>
                            
-                            <button id="agregar">Comprar</button>
-                            <button id="close">X</button>
+                            <button id="agregar" class="btn btn-success">Agregar al Carrito</button>
+                            <button id="comprar-ahora" class="btn btn-primary">Comprar Ahora</button>
+                            <button id="close" class="btn btn-secondary">X</button>
                             
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Modal de Bootstrap para el Ticket -->
+        <div class="modal fade" id="ticketModal" tabindex="-1" aria-labelledby="ticketModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header bg-primary text-white">
+                        <h5 class="modal-title" id="ticketModalLabel">
+                            <i class="fas fa-receipt me-2"></i>Boleta de Compra
+                        </h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="ticket-container">
+                            <!-- Encabezado de la boleta -->
+                            <div class="text-center mb-4">
+                                <h3 class="fw-bold">ENTRETENIMIENTO CREATIVO</h3>
+                                <p class="mb-1">Tienda de Contenido Online</p>
+                                <p class="mb-1">📧 contacto@entretenimiento.com</p>
+                                <p class="mb-3">📞 +1 234 567 8900</p>
+                                <hr class="border-dark border-2">
+                            </div>
+
+                            <!-- Información de la compra -->
+                            <div class="row mb-3">
+                                <div class="col-6">
+                                    <strong>Fecha:</strong> <span id="ticket-fecha"></span>
+                                </div>
+                                <div class="col-6 text-end">
+                                    <strong>Ticket #:</strong> <span id="ticket-numero"></span>
+                                </div>
+                            </div>
+
+                            <!-- Detalles del producto -->
+                            <div class="table-responsive">
+                                <table class="table table-borderless">
+                                    <thead class="border-bottom border-dark">
+                                        <tr>
+                                            <th>Producto</th>
+                                            <th class="text-center">Cant.</th>
+                                            <th class="text-end">Precio</th>
+                                            <th class="text-end">Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="ticket-productos">
+                                        <!-- Los productos se insertarán aquí dinámicamente -->
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <hr class="border-dark border-2">
+
+                            <!-- Totales -->
+                            <div class="row">
+                                <div class="col-8"></div>
+                                <div class="col-4">
+                                    <div class="d-flex justify-content-between">
+                                        <strong>Subtotal:</strong>
+                                        <span id="ticket-subtotal">$0.00</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <strong>IGV (18%):</strong>
+                                        <span id="ticket-igv">$0.00</span>
+                                    </div>
+                                    <hr class="border-dark">
+                                    <div class="d-flex justify-content-between fs-5">
+                                        <strong>TOTAL:</strong>
+                                        <strong id="ticket-total">$0.00</strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Pie de la boleta -->
+                            <div class="text-center mt-4">
+                                <hr class="border-dark border-2">
+                                <p class="mb-1"><strong>¡Gracias por tu compra!</strong></p>
+                                <p class="mb-1">🎬 Disfruta tu contenido digital 🎭</p>
+                                <small class="text-muted">Conserve este ticket para futuras referencias</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-success" onclick="imprimirTicket()">
+                            <i class="fas fa-print me-2"></i>Imprimir
+                        </button>
+                        <button type="button" class="btn btn-info" onclick="descargarTicket()">
+                            <i class="fas fa-download me-2"></i>Descargar PDF
+                        </button>
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
         <script src="js/modal.js"></script>
         <script src="js/lista.js"></script>
         <script src="js/menu.js"></script>
+        <script src="js/ticket.js"></script>
     </body>
 </html>
